@@ -1,0 +1,421 @@
+Year,Country,Units,Source,Electricity Generation (GWh)
+1990,China,GWh,Biomass,NA
+1995,China,GWh,Biomass,2897
+2000,China,GWh,Biomass,2421
+2005,China,GWh,Biomass,5200
+2010,China,GWh,Biomass,24839
+2015,China,GWh,Biomass,52743
+2018,China,GWh,Biomass,90608
+1990,India,GWh,Biomass,NA
+1995,India,GWh,Biomass,NA
+2000,India,GWh,Biomass,1278
+2005,India,GWh,Biomass,4732
+2010,India,GWh,Biomass,14159
+2015,India,GWh,Biomass,25382
+2019,India,GWh,Biomass,44231
+1990,Japan,GWh,Biomass,8721
+1995,Japan,GWh,Biomass,9718
+2000,Japan,GWh,Biomass,9832
+2005,Japan,GWh,Biomass,14315
+2010,Japan,GWh,Biomass,15174
+2015,Japan,GWh,Biomass,18626
+2019,Japan,GWh,Biomass,17564
+1990,Russian Federation,GWh,Biomass,37
+1995,Russian Federation,GWh,Biomass,29
+2000,Russian Federation,GWh,Biomass,22
+2005,Russian Federation,GWh,Biomass,41
+2010,Russian Federation,GWh,Biomass,36
+2015,Russian Federation,GWh,Biomass,30
+2019,Russian Federation,GWh,Biomass,92
+1990,United States,GWh,Biomass,71039
+1995,United States,GWh,Biomass,43876
+2000,United States,GWh,Biomass,47816
+2005,United States,GWh,Biomass,48453
+2010,United States,GWh,Biomass,52436
+2015,United States,GWh,Biomass,61640
+2019,United States,GWh,Biomass,55451
+1990,World,GWh,Biomass,105435
+1995,World,GWh,Biomass,95068
+2000,World,GWh,Biomass,113780
+2005,World,GWh,Biomass,169500
+2010,World,GWh,Biomass,277740
+2015,World,GWh,Biomass,415631
+2018,World,GWh,Biomass,518467
+1990,China,GWh,Coal,469762
+1995,China,GWh,Coal,770500
+2000,China,GWh,Coal,1079310
+2005,China,GWh,Coal,2007302
+2010,China,GWh,Coal,3263494
+2015,China,GWh,Coal,4133839
+2018,China,GWh,Coal,4796126
+1990,India,GWh,Coal,191633
+1995,India,GWh,Coal,296292
+2000,India,GWh,Coal,390233
+2005,India,GWh,Coal,478485
+2010,India,GWh,Coal,657955
+2015,India,GWh,Coal,1032061
+2019,India,GWh,Coal,1131661
+1990,Japan,GWh,Coal,122686
+1995,Japan,GWh,Coal,167916
+2000,Japan,GWh,Coal,222608
+2005,Japan,GWh,Coal,292875
+2010,Japan,GWh,Coal,310913
+2015,Japan,GWh,Coal,354054
+2019,Japan,GWh,Coal,316393
+1990,Russian Federation,GWh,Coal,157032
+1995,Russian Federation,GWh,Coal,160528
+2000,Russian Federation,GWh,Coal,175615
+2005,Russian Federation,GWh,Coal,165451
+2010,Russian Federation,GWh,Coal,166094
+2015,Russian Federation,GWh,Coal,158550
+2019,Russian Federation,GWh,Coal,176787
+1990,United States,GWh,Coal,1699648
+1995,United States,GWh,Coal,1832537
+2000,United States,GWh,Coal,2129498
+2005,United States,GWh,Coal,2153956
+2010,United States,GWh,Coal,1994194
+2015,United States,GWh,Coal,1470997
+2019,United States,GWh,Coal,1058637
+1990,World,GWh,Coal,4429911
+1995,World,GWh,Coal,4993261
+2000,World,GWh,Coal,5994185
+2005,World,GWh,Coal,7316600
+2010,World,GWh,Coal,8662447
+2015,World,GWh,Coal,9534199
+2018,World,GWh,Coal,10159646
+1990,China,GWh,Geothermal,57
+1995,China,GWh,Geothermal,110
+2000,China,GWh,Geothermal,109
+2005,China,GWh,Geothermal,115
+2010,China,GWh,Geothermal,125
+2015,China,GWh,Geothermal,125
+2018,China,GWh,Geothermal,125
+1990,India,GWh,Geothermal,NA
+1995,India,GWh,Geothermal,NA
+2000,India,GWh,Geothermal,NA
+2005,India,GWh,Geothermal,NA
+2010,India,GWh,Geothermal,NA
+2015,India,GWh,Geothermal,NA
+2019,India,GWh,Geothermal,NA
+1990,Japan,GWh,Geothermal,1741
+1995,Japan,GWh,Geothermal,3173
+2000,Japan,GWh,Geothermal,3348
+2005,Japan,GWh,Geothermal,3226
+2010,Japan,GWh,Geothermal,2632
+2015,Japan,GWh,Geothermal,2595
+2019,Japan,GWh,Geothermal,2816
+1990,Russian Federation,GWh,Geothermal,28
+1995,Russian Federation,GWh,Geothermal,30
+2000,Russian Federation,GWh,Geothermal,58
+2005,Russian Federation,GWh,Geothermal,410
+2010,Russian Federation,GWh,Geothermal,505
+2015,Russian Federation,GWh,Geothermal,457
+2019,Russian Federation,GWh,Geothermal,429
+1990,United States,GWh,Geothermal,16012
+1995,United States,GWh,Geothermal,14941
+2000,United States,GWh,Geothermal,14621
+2005,United States,GWh,Geothermal,16778
+2010,United States,GWh,Geothermal,17577
+2015,United States,GWh,Geothermal,18727
+2019,United States,GWh,Geothermal,18207
+1990,World,GWh,Geothermal,36426
+1995,World,GWh,Geothermal,39895
+2000,World,GWh,Geothermal,52171
+2005,World,GWh,Geothermal,58284
+2010,World,GWh,Geothermal,68094
+2015,World,GWh,Geothermal,80562
+2018,World,GWh,Geothermal,88956
+1990,China,GWh,Hydro,126720
+1995,China,GWh,Hydro,190577
+2000,China,GWh,Hydro,222414
+2005,China,GWh,Hydro,397017
+2010,China,GWh,Hydro,722172
+2015,China,GWh,Hydro,1130270
+2018,China,GWh,Hydro,1232100
+1990,India,GWh,Hydro,71656
+1995,India,GWh,Hydro,72596
+2000,India,GWh,Hydro,74462
+2005,India,GWh,Hydro,108121
+2010,India,GWh,Hydro,124922
+2015,India,GWh,Hydro,136495
+2019,India,GWh,Hydro,173803
+1990,Japan,GWh,Hydro,97033
+1995,Japan,GWh,Hydro,92565
+2000,Japan,GWh,Hydro,96817
+2005,Japan,GWh,Hydro,86350
+2010,Japan,GWh,Hydro,90681
+2015,Japan,GWh,Hydro,91270
+2019,Japan,GWh,Hydro,88005
+1990,Russian Federation,GWh,Hydro,165917
+1995,Russian Federation,GWh,Hydro,176412
+2000,Russian Federation,GWh,Hydro,165375
+2005,Russian Federation,GWh,Hydro,174604
+2010,Russian Federation,GWh,Hydro,168397
+2015,Russian Federation,GWh,Hydro,169914
+2019,Russian Federation,GWh,Hydro,196169
+1990,United States,GWh,Hydro,288960
+1995,United States,GWh,Hydro,337856
+2000,United States,GWh,Hydro,279986
+2005,United States,GWh,Hydro,297926
+2010,United States,GWh,Hydro,286333
+2015,United States,GWh,Hydro,271129
+2019,United States,GWh,Hydro,296701
+1990,World,GWh,Hydro,2191674
+1995,World,GWh,Hydro,2545918
+2000,World,GWh,Hydro,2695591
+2005,World,GWh,Hydro,3019509
+2010,World,GWh,Hydro,3535266
+2015,World,GWh,Hydro,3982151
+2018,World,GWh,Hydro,4325111
+1990,China,GWh,Natural gas,2771
+1995,China,GWh,Natural gas,3071
+2000,China,GWh,Natural gas,18013
+2005,China,GWh,Natural gas,23412
+2010,China,GWh,Natural gas,92460
+2015,China,GWh,Natural gas,158196
+2018,China,GWh,Natural gas,236872
+1990,India,GWh,Natural gas,9958
+1995,India,GWh,Natural gas,29434
+2000,India,GWh,Natural gas,55964
+2005,India,GWh,Natural gas,75467
+2010,India,GWh,Natural gas,113289
+2015,India,GWh,Natural gas,68205
+2019,India,GWh,Natural gas,71564
+1990,Japan,GWh,Natural gas,168449
+1995,Japan,GWh,Natural gas,198584
+2000,Japan,GWh,Natural gas,258321
+2005,Japan,GWh,Natural gas,247712
+2010,Japan,GWh,Natural gas,325749
+2015,Japan,GWh,Natural gas,409360
+2019,Japan,GWh,Natural gas,338984
+1990,Russian Federation,GWh,Natural gas,512194
+1995,Russian Federation,GWh,Natural gas,354056
+2000,Russian Federation,GWh,Natural gas,370372
+2005,Russian Federation,GWh,Natural gas,439312
+2010,Russian Federation,GWh,Natural gas,520529
+2015,Russian Federation,GWh,Natural gas,529749
+2019,Russian Federation,GWh,Natural gas,519149
+1990,United States,GWh,Natural gas,381669
+1995,United States,GWh,Natural gas,528844
+2000,United States,GWh,Natural gas,634290
+2005,United States,GWh,Natural gas,782829
+2010,United States,GWh,Natural gas,1017869
+2015,United States,GWh,Natural gas,1372570
+2019,United States,GWh,Natural gas,1634595
+1990,World,GWh,Natural gas,1748624
+1995,World,GWh,Natural gas,2020958
+2000,World,GWh,Natural gas,2774747
+2005,World,GWh,Natural gas,3706208
+2010,World,GWh,Natural gas,4841878
+2015,World,GWh,Natural gas,5525879
+2018,World,GWh,Natural gas,6150200
+1990,China,GWh,Nuclear,NA
+1995,China,GWh,Nuclear,12833
+2000,China,GWh,Nuclear,16737
+2005,China,GWh,Nuclear,53088
+2010,China,GWh,Nuclear,73880
+2015,China,GWh,Nuclear,170789
+2018,China,GWh,Nuclear,295000
+1990,India,GWh,Nuclear,6141
+1995,India,GWh,Nuclear,7982
+2000,India,GWh,Nuclear,16902
+2005,India,GWh,Nuclear,17324
+2010,India,GWh,Nuclear,26266
+2015,India,GWh,Nuclear,37414
+2019,India,GWh,Nuclear,46472
+1990,Japan,GWh,Nuclear,202272
+1995,Japan,GWh,Nuclear,291254
+2000,Japan,GWh,Nuclear,322050
+2005,Japan,GWh,Nuclear,304755
+2010,Japan,GWh,Nuclear,288230
+2015,Japan,GWh,Nuclear,9437
+2019,Japan,GWh,Nuclear,63779
+1990,Russian Federation,GWh,Nuclear,118305
+1995,Russian Federation,GWh,Nuclear,99532
+2000,Russian Federation,GWh,Nuclear,130715
+2005,Russian Federation,GWh,Nuclear,149446
+2010,Russian Federation,GWh,Nuclear,170415
+2015,Russian Federation,GWh,Nuclear,195470
+2019,Russian Federation,GWh,Nuclear,208986
+1990,United States,GWh,Nuclear,611589
+1995,United States,GWh,Nuclear,713806
+2000,United States,GWh,Nuclear,797718
+2005,United States,GWh,Nuclear,810726
+2010,United States,GWh,Nuclear,838931
+2015,United States,GWh,Nuclear,830288
+2019,United States,GWh,Nuclear,843330
+1990,World,GWh,Nuclear,2012902
+1995,World,GWh,Nuclear,2331951
+2000,World,GWh,Nuclear,2590624
+2005,World,GWh,Nuclear,2767952
+2010,World,GWh,Nuclear,2756288
+2015,World,GWh,Nuclear,2570070
+2018,World,GWh,Nuclear,2710430
+1990,China,GWh,Oil,50885
+1995,China,GWh,Oil,55764
+2000,China,GWh,Oil,47421
+2005,China,GWh,Oil,50664
+2010,China,GWh,Oil,14963
+2015,China,GWh,Oil,9909
+2018,China,GWh,Oil,11036
+1990,India,GWh,Oil,10050
+1995,India,GWh,Oil,11276
+2000,India,GWh,Oil,21598
+2005,India,GWh,Oil,17590
+2010,India,GWh,Oil,17669
+2015,India,GWh,Oil,10864
+2019,India,GWh,Oil,7848
+1990,Japan,GWh,Oil,250180
+1995,Japan,GWh,Oil,204131
+2000,Japan,GWh,Oil,134283
+2005,Japan,GWh,Oil,135534
+2010,Japan,GWh,Oil,95921
+2015,Japan,GWh,Oil,97720
+2019,Japan,GWh,Oil,47990
+1990,Russian Federation,GWh,Oil,128639
+1995,Russian Federation,GWh,Oil,67890
+2000,Russian Federation,GWh,Oil,33091
+2005,Russian Federation,GWh,Oil,21218
+2010,Russian Federation,GWh,Oil,9312
+2015,Russian Federation,GWh,Oil,10102
+2019,Russian Federation,GWh,Oil,12010
+1990,United States,GWh,Oil,130649
+1995,United States,GWh,Oil,87189
+2000,United States,GWh,Oil,118482
+2005,United States,GWh,Oil,141290
+2010,United States,GWh,Oil,48086
+2015,United States,GWh,Oil,38837
+2019,United States,GWh,Oil,35964
+1990,World,GWh,Oil,1322975
+1995,World,GWh,Oil,1228863
+2000,World,GWh,Oil,1183808
+2005,World,GWh,Oil,1129445
+2010,World,GWh,Oil,970042
+2015,World,GWh,Oil,1027686
+2018,World,GWh,Oil,783703
+1990,China,GWh,Solar PV,2
+1995,China,GWh,Solar PV,7
+2000,China,GWh,Solar PV,22
+2005,China,GWh,Solar PV,84
+2010,China,GWh,Solar PV,699
+2015,China,GWh,Solar PV,44783
+2018,China,GWh,Solar PV,176901
+1990,India,GWh,Solar PV,NA
+1995,India,GWh,Solar PV,1
+2000,India,GWh,Solar PV,2
+2005,India,GWh,Solar PV,3
+2010,India,GWh,Solar PV,126
+2015,India,GWh,Solar PV,10420
+2019,India,GWh,Solar PV,50557
+1990,Japan,GWh,Solar PV,67
+1995,Japan,GWh,Solar PV,106
+2000,Japan,GWh,Solar PV,357
+2005,Japan,GWh,Solar PV,1421
+2010,Japan,GWh,Solar PV,3543
+2015,Japan,GWh,Solar PV,34803
+2019,Japan,GWh,Solar PV,74114
+1990,Russian Federation,GWh,Solar PV,NA
+1995,Russian Federation,GWh,Solar PV,NA
+2000,Russian Federation,GWh,Solar PV,NA
+2005,Russian Federation,GWh,Solar PV,NA
+2010,Russian Federation,GWh,Solar PV,NA
+2015,Russian Federation,GWh,Solar PV,335
+2019,Russian Federation,GWh,Solar PV,985
+1990,United States,GWh,Solar PV,3
+1995,United States,GWh,Solar PV,4
+2000,United States,GWh,Solar PV,183
+2005,United States,GWh,Solar PV,524
+2010,United States,GWh,Solar PV,3063
+2015,United States,GWh,Solar PV,32091
+2019,United States,GWh,Solar PV,93129
+1990,World,GWh,Solar PV,91
+1995,World,GWh,Solar PV,197
+2000,World,GWh,Solar PV,800
+2005,World,GWh,Solar PV,3732
+2010,World,GWh,Solar PV,32038
+2015,World,GWh,Solar PV,250076
+2018,World,GWh,Solar PV,554382
+1990,China,GWh,Solar thermal,NA
+1995,China,GWh,Solar thermal,NA
+2000,China,GWh,Solar thermal,NA
+2005,China,GWh,Solar thermal,NA
+2010,China,GWh,Solar thermal,2
+2015,China,GWh,Solar thermal,27
+2018,China,GWh,Solar thermal,300
+1990,India,GWh,Solar thermal,NA
+1995,India,GWh,Solar thermal,NA
+2000,India,GWh,Solar thermal,NA
+2005,India,GWh,Solar thermal,NA
+2010,India,GWh,Solar thermal,NA
+2015,India,GWh,Solar thermal,NA
+2019,India,GWh,Solar thermal,NA
+1990,Japan,GWh,Solar thermal,NA
+1995,Japan,GWh,Solar thermal,NA
+2000,Japan,GWh,Solar thermal,NA
+2005,Japan,GWh,Solar thermal,NA
+2010,Japan,GWh,Solar thermal,NA
+2015,Japan,GWh,Solar thermal,NA
+2019,Japan,GWh,Solar thermal,NA
+1990,Russian Federation,GWh,Solar thermal,NA
+1995,Russian Federation,GWh,Solar thermal,NA
+2000,Russian Federation,GWh,Solar thermal,NA
+2005,Russian Federation,GWh,Solar thermal,NA
+2010,Russian Federation,GWh,Solar thermal,NA
+2015,Russian Federation,GWh,Solar thermal,NA
+2019,Russian Federation,GWh,Solar thermal,NA
+1990,United States,GWh,Solar thermal,663
+1995,United States,GWh,Solar thermal,824
+2000,United States,GWh,Solar thermal,526
+2005,United States,GWh,Solar thermal,596
+2010,United States,GWh,Solar thermal,879
+2015,United States,GWh,Solar thermal,3544
+2019,United States,GWh,Solar thermal,4517
+1990,World,GWh,Solar thermal,663
+1995,World,GWh,Solar thermal,824
+2000,World,GWh,Solar thermal,526
+2005,World,GWh,Solar thermal,597
+2010,World,GWh,Solar thermal,1645
+2015,World,GWh,Solar thermal,9605
+2018,World,GWh,Solar thermal,11321
+1990,China,GWh,Wind,2
+1995,China,GWh,Wind,64
+2000,China,GWh,Wind,615
+2005,China,GWh,Wind,2028
+2010,China,GWh,Wind,44623
+2015,China,GWh,Wind,185767
+2018,China,GWh,Wind,365801
+1990,India,GWh,Wind,32
+1995,India,GWh,Wind,529
+2000,India,GWh,Wind,1684
+2005,India,GWh,Wind,6211
+2010,India,GWh,Wind,19657
+2015,India,GWh,Wind,35075
+2019,India,GWh,Wind,66008
+1990,Japan,GWh,Wind,NA
+1995,Japan,GWh,Wind,3
+2000,Japan,GWh,Wind,108
+2005,Japan,GWh,Wind,1751
+2010,Japan,GWh,Wind,4016
+2015,Japan,GWh,Wind,5580
+2019,Japan,GWh,Wind,7502
+1990,Russian Federation,GWh,Wind,NA
+1995,Russian Federation,GWh,Wind,NA
+2000,Russian Federation,GWh,Wind,2
+2005,Russian Federation,GWh,Wind,7
+2010,Russian Federation,GWh,Wind,4
+2015,Russian Federation,GWh,Wind,148
+2019,Russian Federation,GWh,Wind,315
+1990,United States,GWh,Wind,3066
+1995,United States,GWh,Wind,3196
+2000,United States,GWh,Wind,5650
+2005,United States,GWh,Wind,17881
+2010,United States,GWh,Wind,95148
+2015,United States,GWh,Wind,192992
+2019,United States,GWh,Wind,303410
+1990,World,GWh,Wind,3880
+1995,World,GWh,Wind,7959
+2000,World,GWh,Wind,31348
+2005,World,GWh,Wind,104465
+2010,World,GWh,Wind,342202
+2015,World,GWh,Wind,833732
+2018,World,GWh,Wind,1273409
