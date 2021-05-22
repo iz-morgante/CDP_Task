@@ -10,6 +10,7 @@ setwd("~/Documents/CDP_Task/Code/") # set working directory
 rm(list=ls(all=TRUE))
 graphics.off()
 require(ggplot2)
+require(dplyr)
 #require(gridExtra)
 ```
 
@@ -145,6 +146,48 @@ p_FF_percent
 
 ### Question 3: Coal Generation
 *For the most recent year, what percentage of world coal generation do the top five countries represent? How does this compare to natural gas?*
+
+The total electricity generation by coal and gas for the top five countries was found by summing their values for each year. To calculate the proportion the top five countries represent relative to global generation figures, the total electricity generation by the top five countries was divided by the total generation by the World for a given year. 
+
+```{r}
+# Sum electricity generation by coal and gas for all countries
+coal_gas_country <- filter(cdp_data, Source == "Coal" & Country != "World" | Source == "Natural gas" & Country != "World") %>%
+  group_by(Year, Source) %>%
+  summarise(ElectricityGeneration_GWh_TopFive = sum(ElectricityGeneration_GWh))
+
+# Global coal and gas 
+coal_gas_global <- filter(cdp_data, Source == "Coal" & Country == "World" | Source == "Natural gas" & Country == "World")
+coal_gas_global <- select(coal_gas_global, -c(Country, Units))
+
+# Divide country generation by gloabl value to get proportion and join into single df
+coal_gas <- full_join(coal_gas_country, coal_gas_global, by = c('Year','Source')) %>%
+  group_by(Year, Source) %>%
+  mutate(
+    Percent = ElectricityGeneration_GWh_TopFive / ElectricityGeneration_GWh
+  )
+rename(coal_gas, ElectricityGeneration_GWh_Global = ElectricityGeneration_GWh)
+
+glimpse(coal_gas)
+names(which(colSums(is.na(coal_gas))>0))
+```
+
+This proportion calculation works well for the years 1990-2015, as there is electricity data for all countries and the global total for each year. However, for 2018/2019 there is an issue because global electricity generation figures are quoted for 2018, but all countries (aside from China) report their generation figures in 2019. Hence, some NA values appear in the Percent and global electricity generation columns for 2019.  
+
+This year mismatch must be treated with care. Interpolate to find 2018 values for the four countries recored in 2019. 
+
+
+```{r, echo=FALSE}
+# Plot changes until 2015
+coal_gas_2015 <- filter(coal_gas, Year < 2018)
+p_coal_gas_changes_2015 <- ggplot(coal_gas_2015, aes(x = Year, y = Percent, fill = Source)) + 
+  geom_point(aes(color=Source)) +
+  geom_line(aes(color=Source))+ 
+  theme_bw() +
+  ylab("Electricity Generation [GWh]") 
+
+p_coal_gas_changes_2015
+```
+
 
 
 
