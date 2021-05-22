@@ -207,8 +207,34 @@ lifecycle_GHG_emissions <- url %>%
   html_nodes(xpath=table_XPath) %>%
   html_table()
 lifecycle_GHG_emissions <-lifecycle_GHG_emissions[[1]]
-```
-```{r}
-lifecycle_GHG_emissions
+lifecycle_GHG_emissions <- rename(lifecycle_GHG_emissions, Source = Technology, GHG_EF = `50th percentile  (g CO2-eq/kWhe)`) # Rename columns to match CDP data
 ```
 
+
+```{r}
+## View lifecycle GHG data
+head(lifecycle_GHG_emissions)
+str(lifecycle_GHG_emissions)
+
+## Add GHG values to cdp data to find emissions
+emissions <- full_join(cdp_data, lifecycle_GHG_emissions, by = c('Source')) %>% na.omit() %>% # Nas will be produced from countries not generating electricity by a certain source one year and any additional Sources that were included in the wiki data (i.e. didn't match).
+  mutate(
+    ElectricityGeneration_kWh = ElectricityGeneration_GWh * 1e6, #Convert from GWh to kWh
+    GHG_Emissions = ElectricityGeneration_kWh * GHG_EF # Calculate emissions
+  )
+        
+  
+total_emissions <- emissions %>%
+  group_by(Year, Country) %>%
+  summarise(Total_GHG_Emissions = sum(GHG_Emissions))
+```
+
+```{r, echo=FALSE}
+p_GHG_emissions <- ggplot(filter(total_emissions, Country != "World"), aes(x = Year, y = Total_GHG_Emissions, fill = Country)) + 
+  geom_point(aes(color=Country)) +
+  geom_line(aes(color=Country))+ 
+  theme_bw() +
+  ylab("GHG Emissions") 
+
+p_GHG_emissions
+```
