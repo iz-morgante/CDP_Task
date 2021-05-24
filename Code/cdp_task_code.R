@@ -70,7 +70,52 @@ p_FF_percent
 ## QUESTION 3
 ## For the most recent year, what percentage of world coal generation do the top five countries represent? How does this compare to natural gas?
 ################################################################################
+# Plot trends for oil and gas generation by China and World
+p <- ggplot(filter(cdp_data, Source == "Coal"| Source == "Natural gas", Country == "World" | Country == "China" ), aes(x = Year, y = ElectricityGeneration_GWh, fill = Source)) + 
+  geom_point(aes(color=Country)) +
+  geom_line(aes(color=Country, linetype = Source))+ 
+  theme_bw() +
+  ylab("Electricity Generation GWh") 
+p
 
+# All increasing choose models to fit -- quadratic lm, glm with gaussian log link
+# Select model with lowest AIC score to make prediction for 2019 value 
+cg_2019 <- filter(cdp_data, Source == "Coal" | Source=="Natural gas", Year == 2019)
+
+for (country in c("China", "World")){
+  for (source in c("Coal", "Natural gas")){
+    data2Fit <- filter(cdp_data, Source == source, Country == country)
+    
+    # Fit models
+    QuadFit <- lm(ElectricityGeneration_GWh ~ poly(Year,2), data = data2Fit)
+    CubFit <- lm(ElectricityGeneration_GWh ~ poly(Year,3), data = data2Fit)
+    ExpFit <- lm(log(ElectricityGeneration_GWh) ~ log(Year), data = data2Fit)
+    GLMFit <- glm(ElectricityGeneration_GWh ~ log(Year), data = data2Fit, family = gaussian(link = "log"))
+    #NLS_Fit <- nlsLM(ElectricityGeneration_GWh ~ a * Year^b, data = data2Fit, start = list(a = exp(coef(ExpFit)[1]), b = coef(ExpFit)[2])) # Need better starting values
+    
+    # Plot the model fits
+    plot(ElectricityGeneration_GWh ~ Year, data = data2Fit)
+    curve(predict(QuadFit, newdata = data.frame(Year = x)), col = "black", add = TRUE)
+    curve(predict(CubFit, newdata = data.frame(Year = x)), col = "orange", add = TRUE)
+    curve(exp(predict(ExpFit, newdata = data.frame(Year = x))), col = "blue", add = TRUE)
+    curve(predict(GLMFit, newdata = data.frame(Year = x), type = "response"), col = "red", add = TRUE)
+    #curve(predict(NLS_Fit, newdata = data.frame(Year = x)), col = "green", add = TRUE)
+    legend("topleft", legend = c("Quadratic", "Cubic", "Exponential", "Gauss GLM"),
+           col = c("black", "orange", "blue", "red"),
+           lty = c(1, 1, 1))
+    
+    # Find AIC for models and their predicted value for 2019
+    AIC_values <- data.frame(Model  = c("QuadFit", "CubFit", "ExpFit", "GLMFit"), AIC = c(AIC(QuadFit), AIC(CubFit), AIC(ExpFit), AIC(GLMFit)), Prediction = c(as.numeric(predict(QuadFit, data.frame(Year = 2019))), as.numeric(predict(CubFit, data.frame(Year = 2019))), as.numeric(exp(predict(ExpFit, data.frame(Year = 2019)))), as.numeric(predict(GLMFit, data.frame(Year = 2019), type = "response"))))
+    
+    # Select best fitting model by minimum AIC value 
+    best_fit <- AIC_values[which.min(AIC_values$AIC), ]
+    
+    
+    cg_2019 <- cg_2019 %>% add_row(Year = 2019, Country = country, Units = "GWh", Source = source, ElectricityGeneration_GWh = best_fit$Prediction)
+  }
+}
+
+## Extrapolation method 
 coal_gas_2019 <- filter(cdp_data, Source == "Coal" | Source=="Natural gas", Year == 2019)
 coal_gas_extrap <- filter(cdp_data, Source == "Coal" | Source=="Natural gas", Country == "World" | Country == "China", Year > 2014)
 
@@ -162,3 +207,7 @@ p_GHG_emissions <- ggplot(total_emissions, aes(x = Year, y = Total_GHG_Emissions
   ylab("GHG Emissions") 
 
 p_GHG_emissions
+
+################################################################################
+################################################################################
+
